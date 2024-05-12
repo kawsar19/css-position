@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green {
+            height: 200px;
+            width: 400px;
+            background-color: green;
+            top: 100px;
+            left: 40%;
+            position: relative;
+          
+        }
+        .red {
+            height: 70px;
+            width: 70px;
+            background-color: red;
+            border-radius: 100%;
+            position: absolute;
+            top: 100%;
+            opacity: 0;
+            left: 50%;
+            transition: .3s;
+        }
+        .green:hover .red {
+            opacity: 1;
+            top:50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="green">
+        <div class="red"></div>
+    </div>
+</body>
+
+</html>

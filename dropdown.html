@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+        header {
+            padding: 0 5%;
+            height: 70px;
+            background-color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+        }
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+       header a {
+        color: #fff;
+        }
+        ul .menuitem {
+            position: relative;
+        }
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            height: 300px;
+            width: 100px;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            display: none;
+        }
+        ul .menuitem:hover .dropdown { 
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Logo</h3>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">ABout</a></li>
+            <li class="menuitem"><a href="">Service</a>
+            <ul class="dropdown">
+                <li>Web design</li>
+                <li>Graphic design</li>
+            </ul>
+            </li>
+        </ul>
+    </header>
+</body>
+</html>
